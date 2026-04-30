@@ -1,0 +1,23 @@
+.input-group {
+  margin-bottom: var(--space-md);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+}

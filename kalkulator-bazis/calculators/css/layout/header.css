@@ -1,0 +1,88 @@
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  float: right;
+  margin: 10px;
+}
+
+/* LOGO */
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text);
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* Tablet+ */
+@media (min-width: 374px) {
+  .logo {
+    width: 130px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* mobil */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 16px;
+    padding: 12px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    width: 15%;
+    margin: 10px;
+    float: right;
+  }
+}

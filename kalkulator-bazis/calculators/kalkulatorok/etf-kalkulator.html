@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ETF kalkulátor: számold ki a befektetésed várható értékét kamatos kamattal." />
+  <title>ETF kalkulátor – befektetés számítás</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/pages/etf.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container page-etf">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>ETF kalkulátor</h1>
+      <p>Számold ki, mennyit érhet a befektetésed hosszú távon.</p>
+    </section>
+
+    <!-- KALKULÁTOR -->
+    <section class="card card-calculator">
+
+      <div class="calc-grid">
+
+        <div>
+          <label>Kezdőtőke (Ft)</label>
+          <input type="text" id="initial" inputmode="numeric" placeholder="pl. 100000" />
+        </div>
+
+        <div>
+          <label>Havi befektetés (Ft)</label>
+          <input type="text" id="monthly" inputmode="numeric" placeholder="pl. 20000" />
+        </div>
+
+        <div>
+          <label>Éves hozam (%)</label>
+          <input type="number" id="rate" placeholder="pl. 7" />
+        </div>
+
+        <div>
+          <label>Időtáv (év)</label>
+          <input type="number" id="years" placeholder="pl. 20" />
+        </div>
+
+      </div>
+
+      <div class="result-box">
+        <p>Végösszeg:</p>
+        <p id="result-final">–</p>
+
+        <p id="result-profit"></p>
+      </div>
+
+    </section>
+
+    <!-- SEO -->
+    <section class="article">
+
+      <div class="info-box">
+        <strong>Tipp:</strong> A hosszú távú befektetésnél a kamatos kamat a legnagyobb erő.
+      </div>
+
+      <h2>Mi az ETF?</h2>
+      <p>
+        Az ETF (tőzsdén kereskedett alap) egy befektetési forma, amely több részvényt vagy eszközt tartalmaz.
+        Segítségével egyszerre több vállalatba fektethetsz.
+      </p>
+
+      <h2>Hogyan működik a kamatos kamat?</h2>
+      <p>
+        A hozam nemcsak az eredeti befektetésedre, hanem a már megszerzett nyereségre is számítódik.
+        Ez hosszú távon exponenciális növekedést eredményez.
+      </p>
+
+      <h2>Példa</h2>
+      <p>
+        Ha havonta 20 000 Ft-ot fektetsz be 7%-os hozammal 20 éven keresztül,
+        a befektetésed több millió forintra nőhet.
+      </p>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/utils.js" ></script>
+  <script src="../js/penzugyi/etf.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="BMI kalkulátor: testtömeg index számítás egyszerűen. Tudd meg, hogy normál, túlsúlyos vagy alultáplált vagy." />
+  <title>BMI kalkulátor – testtömeg index számítás</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/bmi.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container page-bmi">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>BMI kalkulátor</h1>
+      <p>Számold ki a testtömeg indexedet (BMI) gyorsan és egyszerűen.</p>
+    </section>
+
+    <!-- KALKULÁTOR -->
+    <section class="card card-calculator">
+
+      <div class="calc-grid">
+
+        <div>
+          <label>Testsúly (kg)</label>
+          <input type="number" id="weight" placeholder="pl. 75" />
+        </div>
+
+        <div>
+          <label>Magasság (cm)</label>
+          <input type="number" id="height" placeholder="pl. 175" />
+        </div>
+
+      </div>
+
+      <div class="result-box">
+        <p>BMI érték:</p>
+        <p id="result-bmi">–</p>
+        <p id="result-category"></p>
+      </div>
+
+    </section>
+
+    <!-- SEO TARTALOM -->
+    <section class="article">
+
+      <div class="info-box">
+        <strong>Fontos:</strong> A BMI egy általános iránymutatás, nem veszi figyelembe az izomtömeget vagy
+        testösszetételt.
+      </div>
+
+      <h2>Mi az a BMI?</h2>
+      <p>
+        A BMI (Body Mass Index, testtömeg index) egy egyszerű mutató, amely a testsúly és a magasság alapján becsüli
+        meg,
+        hogy valaki alultáplált, normál testsúlyú, túlsúlyos vagy elhízott.
+      </p>
+
+      <h2>BMI képlet</h2>
+      <p><strong>BMI = testsúly (kg) / (magasság (m) × magasság (m))</strong></p>
+
+      <h2>BMI kategóriák</h2>
+
+      <ul>
+        <li>18.5 alatt – sovány</li>
+        <li>18.5 – 24.9 – normál testsúly</li>
+        <li>25 – 29.9 – túlsúly</li>
+        <li>30 felett – elhízás</li>
+      </ul>
+
+      <h2>Miért fontos a BMI?</h2>
+      <p>
+        A BMI segít gyorsan felmérni az egészségi kockázatokat. A túl magas vagy túl alacsony érték
+        hosszú távon egészségügyi problémákhoz vezethet.
+      </p>
+
+      <h2>Mire nem jó a BMI?</h2>
+      <p>
+        A BMI nem veszi figyelembe az izomtömeget, ezért sportolóknál torzíthat.
+        Nem ad teljes képet a testösszetételről.
+      </p>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/utils.js" ></script>
+  <script src="../js/egeszseg/bmi.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Autó kalkulátor: fogyasztás és utazási költség kiszámítása egyszerűen." />
+  <title>Autó kalkulátor – fogyasztás és költség számítás</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/auto.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container page-auto">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Autó kalkulátorok</h1>
+      <p>Fogyasztás, költség és üzemanyag számítás egy helyen.</p>
+    </section>
+
+    <!-- 1. KALKULÁTOR -->
+    <section class="card card-calculator">
+
+      <h2>Fogyasztás kalkulátor</h2>
+
+      <div class="calc-grid">
+        <div>
+          <label>Megtett távolság (km)</label>
+          <input type="number" id="distance" />
+        </div>
+
+        <div>
+          <label>Elhasznált üzemanyag (liter)</label>
+          <input type="number" id="fuelUsed" />
+        </div>
+      </div>
+
+      <div class="result-box">
+        <p>Fogyasztás:</p>
+        <p id="result-consumption">–</p>
+      </div>
+
+    </section>
+
+    <!-- 2. KALKULÁTOR -->
+    <section class="card card-calculator">
+
+      <h2>Utazási költség kalkulátor</h2>
+
+      <div class="calc-grid">
+        <div>
+          <label>Távolság (km)</label>
+          <input type="number" id="distance-cost" />
+        </div>
+
+        <div>
+          <label>Fogyasztás (l/100km)</label>
+          <input type="number" id="consumption-cost" />
+        </div>
+
+        <div>
+          <label>Üzemanyag ár (Ft/l)</label>
+          <input type="number" id="fuelPrice" />
+        </div>
+      </div>
+
+      <div class="result-box">
+        <p>Költség:</p>
+        <p id="result-cost">–</p>
+      </div>
+
+    </section>
+
+    <!-- 3. KALKULÁTOR -->
+    <section class="card card-calculator">
+
+      <h2>Hatótáv kalkulátor</h2>
+
+      <div class="calc-grid">
+        <div>
+          <label>Tank mérete (liter)</label>
+          <input type="number" id="tankSize" />
+        </div>
+
+        <div>
+          <label>Fogyasztás (l/100km)</label>
+          <input type="number" id="consumption-range" />
+        </div>
+      </div>
+
+      <div class="result-box">
+        <p>Hatótáv:</p>
+        <p id="result-range">–</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/utils.js" ></script>
+  <script src="../js/cookie.js" defer></script>
+  <script src="../js/autos/auto-super.js" defer></script>
+
+</body>
+
+</html>

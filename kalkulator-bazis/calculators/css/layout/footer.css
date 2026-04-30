@@ -1,0 +1,77 @@
+#footer {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg) 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* copyright */
+.footer-container p {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: var(--space-sm);
+}
+
+/* linkek */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* link stílus */
+.footer-links a {
+  font-size: 14px;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* hover */
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* kis elválasztó pötty */
+.footer-links a:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+  color: var(--border);
+}
+
+.footer-links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: var(--primary);
+  transition: 0.2s;
+}
+
+.footer-links a:hover::before {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-row p::after {
+    content: "•";
+    margin-left: 10px;
+    color: var(--border);
+  }
+}
+
+@media (max-width: 375px) {
+  #footer {
+    margin-top: 25px;
+  }
+}
