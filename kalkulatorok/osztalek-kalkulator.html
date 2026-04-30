@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Osztalék kalkulátor: számold ki mennyi nettó osztalékot kapsz adózás után." />
+  <title>Osztalék kalkulátor – nettó osztalék számítás</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/osztalek.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<main class="container page-osztalek">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Osztalék kalkulátor</h1>
+    <p>Számold ki, mennyi osztalékot kapsz kézhez adózás után.</p>
+  </section>
+
+  <!-- KALKULÁTOR -->
+  <section class="card card-calculator">
+
+    <div class="calc-grid">
+
+      <div>
+        <label>Befektetett összeg (Ft)</label>
+        <input type="text" id="amount" placeholder="pl. 1 000 000" />
+      </div>
+
+      <div>
+        <label>Osztalékhozam (%)</label>
+        <input type="number" id="yield" placeholder="pl. 5" />
+      </div>
+
+      <div>
+        <label>Adó (%)</label>
+        <input type="number" id="tax" value="15" />
+      </div>
+
+    </div>
+
+    <div class="result-box">
+
+      <p>Éves bruttó osztalék:</p>
+      <p id="result-gross">–</p>
+
+      <p id="result-net"></p>
+      <p id="result-monthly"></p>
+
+    </div>
+
+  </section>
+
+  <!-- SEO / TARTALOM -->
+  <section class="article">
+
+    <div class="info-box">
+      <strong>Tipp:</strong> Az osztalék egy passzív jövedelem forma, amely hosszú távon jelentős bevételt hozhat.
+    </div>
+
+    <h2>Mi az osztalék?</h2>
+    <p>
+      Az osztalék a vállalat nyereségének azon része, amelyet a részvényesek között osztanak szét.
+      Ha részvényt vásárolsz, tulajdonrészt szerzel a cégben, és jogosult lehetsz osztalékra.
+    </p>
+
+    <h2>Hogyan működik az osztalék?</h2>
+    <p>
+      A cégek évente vagy negyedévente fizetnek osztalékot. Az osztalék mértéke függ a vállalat
+      teljesítményétől és döntéseitől.
+    </p>
+
+    <h2>Mi az osztalékhozam?</h2>
+    <p>
+      Az osztalékhozam azt mutatja meg, hogy a befektetett összeg hány százalékát kapod vissza évente osztalékként.
+    </p>
+
+    <p><strong>Példa:</strong></p>
+    <ul>
+      <li>1 000 000 Ft befektetés</li>
+      <li>5% hozam → 50 000 Ft évente</li>
+    </ul>
+
+    <h2>Adózás</h2>
+    <p>
+      Magyarországon az osztalék után általában 15% személyi jövedelemadót kell fizetni.
+      Egyes esetekben további terhek is felmerülhetnek (pl. szocho).
+    </p>
+
+    <h2>Miért jó az osztalék?</h2>
+
+    <ul>
+      <li>passzív jövedelem</li>
+      <li>rendszeres bevétel</li>
+      <li>hosszú távú vagyonépítés</li>
+    </ul>
+
+    <h2>Osztalék vs növekedési részvények</h2>
+    <p>
+      Az osztalékfizető részvények stabilabb bevételt adhatnak, míg a növekedési részvények
+      inkább árfolyamnyereségre építenek.
+    </p>
+
+    <h2>Mire figyelj?</h2>
+
+    <ul>
+      <li>túl magas hozam kockázatos lehet</li>
+      <li>osztalék nem garantált</li>
+      <li>adózás országonként eltér</li>
+    </ul>
+
+    <h2>Hogyan építs osztalék portfóliót?</h2>
+    <p>
+      A diverzifikáció kulcsfontosságú. Érdemes több iparágból és régióból választani
+      osztalékfizető részvényeket vagy ETF-eket.
+    </p>
+
+    <p>
+      Hosszú távon az újrabefektetett osztalék jelentősen növeli a hozamot
+      a kamatos kamat hatása miatt.
+    </p>
+
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/utils.js" ></script>
+<script src="../js/penzugyi/osztalek.js" defer></script>
+
+</body>
+</html>

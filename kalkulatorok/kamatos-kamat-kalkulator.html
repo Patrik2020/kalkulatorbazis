@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kamatos kamat kalkulátor: számold ki befektetésed növekedését." />
+  <title>Kamatos kamat kalkulátor</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/kamatos-kamat.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container page-kamatos">
+
+    <section class="hero">
+      <h1>Kamatos kamat kalkulátor</h1>
+      <p>Nézd meg, hogyan növekszik a pénzed az idő múlásával.</p>
+    </section>
+
+    <section class="card card-calculator">
+
+      <div class="calc-grid">
+
+        <div>
+          <label>Kezdőtőke (Ft)</label>
+          <input type="text" id="initial" placeholder="pl. 100 000" />
+        </div>
+
+        <div>
+          <label>Havi befizetés (Ft)</label>
+          <input type="text" id="monthly" placeholder="pl. 20 000" />
+        </div>
+
+        <div>
+          <label>Éves kamat (%)</label>
+          <input type="number" id="rate" placeholder="pl. 7" />
+        </div>
+
+        <div>
+          <label>Időtáv (év)</label>
+          <input type="number" id="years" placeholder="pl. 20" />
+        </div>
+
+      </div>
+
+      <div class="result-box">
+        <p>Végösszeg:</p>
+        <p id="result-final">–</p>
+
+        <p id="result-profit"></p>
+      </div>
+
+    </section>
+
+    <!-- SEO -->
+    <section class="article">
+
+      <div class="info-box">
+        <strong>Tipp:</strong> Minél korábban kezdesz befektetni, annál nagyobb a kamatos kamat hatása.
+      </div>
+
+      <h2>Mi az a kamatos kamat?</h2>
+      <p>
+        A kamatos kamat azt jelenti, hogy a hozam nemcsak a befektetett tőkére,
+        hanem a korábban megszerzett hozamokra is számítódik.
+      </p>
+
+      <h2>Miért fontos?</h2>
+      <p>
+        Hosszú távon exponenciális növekedést eredményez, ezért a befektetés egyik legfontosabb tényezője.
+      </p>
+
+      <h2>Példa</h2>
+      <p>
+        Ha havonta rendszeresen befektetsz, a hozam évről évre gyorsabban növekszik.
+      </p>
+
+      <h2>Mire figyelj?</h2>
+
+      <ul>
+        <li>időtáv</li>
+        <li>hozam mértéke</li>
+        <li>rendszeres befizetés</li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/utils.js" ></script>
+  <script src="../js/penzugyi/kamatos-kamat.js" defer></script>
+
+</body>
+
+</html>

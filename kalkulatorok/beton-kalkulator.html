@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Beton kalkulátor: számold ki mennyi beton kell m³-ben alaphoz, födémhez vagy járdához." />
+  <title>Beton kalkulátor – m³ számítás egyszerűen</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/beton.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container page-beton">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Beton kalkulátor</h1>
+      <p>Számold ki mennyi beton szükséges az építkezéshez.</p>
+    </section>
+
+    <!-- KALKULÁTOR -->
+    <section class="card card-calculator">
+
+      <div class="calc-grid">
+
+        <div>
+          <label>Hossz (m)</label>
+          <input type="number" id="length" placeholder="pl. 10" />
+        </div>
+
+        <div>
+          <label>Szélesség (m)</label>
+          <input type="number" id="width" placeholder="pl. 5" />
+        </div>
+
+        <div>
+          <label>Vastagság (cm)</label>
+          <input type="number" id="depth" placeholder="pl. 20" />
+        </div>
+
+      </div>
+
+      <div class="result-box">
+        <p>Szükséges beton:</p>
+        <p id="result-volume">–</p>
+      </div>
+
+    </section>
+
+    <section class="article">
+
+      <div class="info-box">
+        <strong>Tipp:</strong> Mindig számolj legalább 5–10% ráhagyással a beton rendelésnél.
+      </div>
+
+      <h2>Mennyi beton kell?</h2>
+      <p>
+        A szükséges beton mennyiség kiszámításához három adat szükséges: hossz, szélesség és vastagság.
+        A kalkulátor ez alapján automatikusan kiszámolja a szükséges térfogatot köbméterben (m³).
+      </p>
+
+      <h2>Beton mennyiség számítás képlete</h2>
+      <p><strong>m³ = hossz × szélesség × (vastagság / 100)</strong></p>
+
+      <p>
+        Például egy 10 méter hosszú, 5 méter széles és 20 cm vastag beton alap esetén:
+      </p>
+
+      <ul>
+        <li>10 × 5 × 0.2 = 10 m³ beton szükséges</li>
+      </ul>
+
+      <h2>Hol használható a beton kalkulátor?</h2>
+
+      <ul>
+        <li>alapozás (ház alap, sávalap)</li>
+        <li>beton járda vagy kocsibeálló</li>
+        <li>födém vagy aljzatbeton</li>
+        <li>terasz vagy lépcső készítés</li>
+      </ul>
+
+      <h2>Miért fontos a pontos számítás?</h2>
+      <p>
+        Ha túl kevés betont rendelsz, meg kell szakítani a munkát. Ha túl sokat,
+        felesleges költséged keletkezik. Ezért érdemes előre pontosan kiszámolni a szükséges mennyiséget.
+      </p>
+
+      <h2>Ráhagyás beton rendelésnél</h2>
+      <p>
+        A gyakorlatban mindig ajánlott legalább 5–10% ráhagyással számolni,
+        mivel veszteség, szivárgás vagy egyenetlen felület miatt több betonra lehet szükség.
+      </p>
+
+    </section>
+    <!-- INFO -->
+    <section class="article">
+
+      <h2>Hogyan számoljuk ki?</h2>
+      <p>
+        A beton térfogata: hossz × szélesség × vastagság.
+      </p>
+
+      <p><strong>Képlet:</strong></p>
+      <p>m³ = hossz × szélesség × (vastagság / 100)</p>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/utils.js" ></script>
+  <script src="../js/epitoipari/beton.js" defer></script>
+
+</body>
+
+</html>

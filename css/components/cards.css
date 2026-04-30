@@ -1,0 +1,54 @@
+/* ===== ALAP CARD ===== */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+/* ===== LINK KÁRTYA (index, kategória) ===== */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* ===== KALKULÁTOR KÁRTYA ===== */
+.card-calculator {
+  cursor: default;
+}
+
+/* FONTOS: SEMMI overlay! */
+.card::after {
+  display: none;
+}
+
+/* ===== KÉPEK ===== */
+
+.card-finance::before {
+  background-image: url("./images/finance.png");
+}
+
+.card-building::before {
+  background-image: url("./images/building.png");
+}
+
+.card-health::before {
+  background-image: url("./images/health.png");
+}
+
+.card-general::before {
+  background-image: url("./images/general.png");
+}
+
+.card-auto::before {
+  background-image: url("./images/auto.png");
+}

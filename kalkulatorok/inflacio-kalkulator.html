@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Infláció kalkulátor: számold ki pénzed értékének változását az infláció hatására." />
+  <title>Infláció kalkulátor</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/inflacio.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container page-inflacio">
+
+    <section class="hero">
+      <h1>Infláció kalkulátor</h1>
+      <p>Nézd meg, mennyit ér a pénzed az idő múlásával.</p>
+    </section>
+
+    <section class="card card-calculator">
+
+      <div class="calc-grid">
+
+        <div>
+          <label>Összeg (Ft)</label>
+          <input type="text" id="amount" placeholder="pl. 1 000 000" />
+        </div>
+
+        <div>
+          <label>Infláció (%)</label>
+          <input type="number" id="rate" placeholder="pl. 5" />
+        </div>
+
+        <div>
+          <label>Időtáv (év)</label>
+          <input type="number" id="years" placeholder="pl. 10" />
+        </div>
+
+      </div>
+
+      <div class="result-box">
+        <p>Érték az idő végén:</p>
+        <p id="result-final">–</p>
+
+        <p id="result-loss"></p>
+      </div>
+
+    </section>
+
+    <!-- SEO -->
+    <section class="article">
+
+      <div class="info-box">
+        <strong>Fontos:</strong> Az infláció folyamatosan csökkenti a pénz vásárlóerejét.
+      </div>
+
+      <h2>Mi az infláció?</h2>
+      <p>
+        Az infláció az árak általános növekedése, amely miatt ugyanannyi pénzért idővel kevesebb terméket és szolgáltatást tudsz vásárolni.
+      </p>
+
+      <h2>Hogyan számoljuk?</h2>
+      <p>
+        Az infláció hatása exponenciális: minden évben az előző év értékére hat.
+      </p>
+
+      <h2>Példa</h2>
+      <p>
+        Ha az infláció 5%, akkor 10 év alatt a pénzed értéke jelentősen csökken.
+      </p>
+
+      <h2>Miért fontos?</h2>
+
+      <ul>
+        <li>megtakarítások értéke csökken</li>
+        <li>befektetés nélkül veszteség ér</li>
+        <li>nyugdíj tervezésnél kulcsfontosságú</li>
+      </ul>
+
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/utils.js" ></script>
+  <script src="../js/penzugyi/inflacio.js" defer></script>
+
+</body>
+
+</html>

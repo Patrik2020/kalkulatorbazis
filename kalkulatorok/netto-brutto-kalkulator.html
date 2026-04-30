@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nettó-bruttó kalkulátor: számold ki mennyi marad a fizetésedből, és nézd meg alternatív adózással is." />
+  <title>Nettó–bruttó kalkulátor – nettó fizetés számítás</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/netto-brutto.css" />
+  <script src="../js/global-head.js"></script>
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<main class="container page-netto">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Nettó–bruttó kalkulátor</h1>
+    <p>Számold ki pontosan, mennyi marad a fizetésedből adók és járulékok után.</p>
+  </section>
+
+  <!-- KALKULÁTOR -->
+  <section class="card card-calculator">
+
+    <div class="calc-grid">
+      <div>
+        <label>Bruttó fizetés (Ft)</label>
+        <input type="text" id="gross" placeholder="pl. 500 000" />
+      </div>
+    </div>
+
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="mode" value="current" checked />
+        Jelenlegi adózás
+      </label>
+
+      <label>
+        <input type="radio" name="mode" value="alt" />
+        Alternatív modell (9% SZJA)
+      </label>
+    </div>
+
+    <div class="result-box">
+      <p>Nettó fizetés:</p>
+      <p id="result-net">–</p>
+      <p id="result-diff"></p>
+    </div>
+
+  </section>
+
+  <!-- SEO BLOKK -->
+  <section class="article">
+
+    <div class="info-box">
+      <strong>Fontos:</strong> Az alternatív számítás egy feltételezett modell,
+      nem a jelenlegi hivatalos adózási szabályok alapján történik.
+    </div>
+
+    <h2>Mi az a bruttó és nettó fizetés?</h2>
+    <p>
+      A bruttó fizetés az az összeg, amelyet a munkáltató fizet a munkavállalónak.
+      Ebből kerülnek levonásra az adók és járulékok, így jutunk el a nettó fizetéshez,
+      amit ténylegesen kézhez kapsz.
+    </p>
+
+    <h2>Hogyan számoljuk a nettó fizetést?</h2>
+    <p>
+      A nettó fizetés kiszámításához a bruttó bérből levonjuk a személyi jövedelemadót (SZJA)
+      és a társadalombiztosítási járulékot (TB).
+    </p>
+
+    <h3>Jelenlegi rendszer</h3>
+    <ul>
+      <li>15% személyi jövedelemadó (SZJA)</li>
+      <li>18,5% társadalombiztosítási járulék (TB)</li>
+    </ul>
+
+    <p>
+      Ez azt jelenti, hogy a bruttó fizetésed közel egyharmada kerül levonásra.
+    </p>
+
+    <h3>Alternatív számítás (9% SZJA modell)</h3>
+    <p>
+      Ebben a kalkulációban az SZJA mértéke 15%-ról 9%-ra csökken,
+      miközben a TB járulék változatlan marad.
+    </p>
+
+    <p>
+      Ez a modell lehetőséget ad arra, hogy megnézd, hogyan változna a nettó fizetésed
+      alacsonyabb adóterhelés mellett.
+    </p>
+
+    <h2>Mennyi a különbség?</h2>
+    <p>
+      Már néhány százalékos adócsökkentés is jelentős különbséget eredményezhet
+      havi szinten. Ez éves szinten akár több százezer forint is lehet.
+    </p>
+
+    <h2>Mire használható a kalkulátor?</h2>
+
+    <ul>
+      <li>fizetésemelés értékelése</li>
+      <li>állásváltás összehasonlítása</li>
+      <li>nettó bér gyors kiszámítása</li>
+      <li>különböző adózási modellek összehasonlítása</li>
+    </ul>
+
+    <h2>Fontos tudni</h2>
+    <p>
+      A kalkulátor egyszerűsített számítást végez, és nem tartalmazza az egyéni kedvezményeket,
+      például a családi adókedvezményt vagy egyéb adócsökkentő tényezőket.
+    </p>
+
+    <p>
+      A pontos nettó fizetés egyéni körülményektől függően eltérhet.
+    </p>
+
+  </section>
+
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/utils.js" ></script>
+<script src="../js/penzugyi/netto-brutto.js" defer></script>
+
+</body>
+</html>
