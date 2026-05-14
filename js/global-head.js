@@ -1,7 +1,7 @@
 const isLocal = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
 
 const basePath = isLocal
-  ? "/kalkulator-bazis/calculators/favicon"
+  ? "/kalkulator-bazis/favicon"
   : "/favicon";
 
 const headContent = `

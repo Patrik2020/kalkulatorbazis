@@ -55,12 +55,12 @@ function parseNumber(value) {
 // HEADER és FOOTER betöltése
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
-  const isCalculatorPage = window.location.pathname.includes("/kalkulatorok/");
+  const isCalculatorPage = window.location.pathname.includes("/Kalkulatorok/");
 
   const base = isCalculatorPage ? "../" : "./";
 
-  loadComponent("header", base + "components/header.html");
-  loadComponent("footer", base + "components/footer.html");
+  loadComponent("header", base + "../components/header.html");
+  loadComponent("footer", base + "../components/footer.html");
 });
 
 function loadComponent(id, path) {
@@ -99,21 +99,3 @@ function initMobileMenu() {
     }
   });
 }
-
-// =========================
-// TÉMA KEZELÉS
-// =========================
-document.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme") || "dark";
-
-  // applyTheme(savedTheme);
-
-  // header betöltés után kell
-  setTimeout(() => {
-    const btn = document.getElementById("themeToggle");
-    if (btn) {
-      btn.addEventListener("click", toggleTheme);
-      updateThemeIcon();
-    }
-  }, 100);
-});
